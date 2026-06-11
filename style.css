@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:   #eeecec;
+  color: #000000;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #38003c;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00ff87;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav button {
+  background-color: #00ff87;
+  color: #38003c;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+nav button:hover {
+  background-color: #ffffff;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.mensaje {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 60px;
+}
+
+/* TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #38003c;
+  color: #00ff87;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+td img {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+tr:hover {
+  background-color: #00ff87;
+}
+
+/* PARTIDOS */
+.filtro {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filtro input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  width: 80px;
+  text-align: center;
+  background-color: #38003c;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.filtro button {
+  padding: 10px 20px;
+  background-color: #00ff87;
+  color: #38003c;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tarjeta-partido {
+  background-color: #00ff87;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta-partido .equipos {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tarjeta-partido .fecha {
+  font-size: 0.8rem;
+  color: #38003c;
+}
+
+.tarjeta-partido .marcador {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* GOLEADORES */
+.tarjeta-goleador {
+  background-color: #00ff87;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tarjeta-goleador .nombre {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.tarjeta-goleador .equipo {
+  font-size: 0.85rem;
+  color: #42042f;
+}
+
+.tarjeta-goleador .goles {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00ff87;
+}
+
+.posicion-badge {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #888;
+  min-width: 30px;
+}
